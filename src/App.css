@@ -15,6 +15,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  color: var(--color-white);
 }
 
 :root {
