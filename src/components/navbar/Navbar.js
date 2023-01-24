@@ -1,14 +1,21 @@
 import "./Navbar.css"
 import React from "react"
 import { NavLink } from "react-router-dom"
-import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai"
+import {
+  AiOutlineShoppingCart,
+  AiOutlineSearch,
+  AiOutlineClose,
+} from "react-icons/ai"
 import { GiHamburgerMenu } from "react-icons/gi"
+import { useState } from "react"
 
 const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
+  const [navShow, setNavShow] = useState(false)
+
   const scrollTop = () => {
     window.scroll(0, 0)
   }
-
+  console.log(navShow)
   return (
     <nav className="navbar">
       <div className="container navbar-container">
@@ -21,9 +28,9 @@ const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
           </NavLink>
         </div>
         <div className="navbar-nav">
-          <ul>
+          <ul className={navShow ? "show" : "hide"}>
             {navigation?.map((val, idx) => (
-              <li key={idx}>
+              <li key={idx} onClick={() => setNavShow(false)}>
                 <a href={val?.path}>{val?.nav}</a>
               </li>
             ))}
@@ -33,7 +40,11 @@ const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
           <AiOutlineShoppingCart size="1.5em" />
           <AiOutlineSearch size="1.5em" />
           <div className="navbar-hamburger">
-            <GiHamburgerMenu size="1.5em" />
+            {navShow ? (
+              <AiOutlineClose size="1.5em" onClick={() => setNavShow(false)} />
+            ) : (
+              <GiHamburgerMenu size="1.5em" onClick={() => setNavShow(true)} />
+            )}
           </div>
         </div>
       </div>

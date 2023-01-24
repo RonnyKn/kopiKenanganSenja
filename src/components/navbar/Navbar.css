@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   height: 5rem;
+  z-index: 99;
 }
 
 .navbar-container {
@@ -22,6 +23,10 @@
 
 .navbar-logo span {
   color: var(--color-primary);
+}
+
+..navbar-nav {
+  position: relative;
 }
 
 .navbar-nav ul {
@@ -51,4 +56,75 @@
 
 .navbar-hamburger {
   display: none;
+}
+
+@media screen and (max-width:990px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .navbar-hamburger {
+    display: inline-block;
+  }
+
+  .navbar-nav ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--color-bg);
+    padding: 2rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 0 0 0 1rem;
+    perspective: 400;
+    opacity: 0;
+    animation: animateNavbar 600ms ease forwards;
+  }
+
+  .navbar-nav a:hover {
+    color: var(--color-primary);
+  }
+
+  .navbar-nav li {
+    transform: rotateX(-90deg);
+    border-bottom: 3px solid var(--color-primary);
+    opacity: 0;
+    animation: animateNavbar 600ms ease forwards;
+  }
+
+  .navbar-nav li:nth-child(2) {
+    animation-delay: 200ms;
+  }
+
+  .navbar-nav li:nth-child(3) {
+    animation-delay: 400ms;
+  }
+
+  .navbar-nav li:nth-child(4) {
+    animation-delay: 600ms;
+  }
+
+  @keyframes animateNavbar {
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+      transition: var(--transition);
+    }
+  }
+
+  .show {
+    display: flex !important;
+  }
+
+  .hide {
+    display: none !important;
+  }
 }
