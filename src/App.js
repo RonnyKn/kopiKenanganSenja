@@ -5,7 +5,7 @@ import Footer from "./components/footer/Footer"
 import Hero from "./components/hero/Hero"
 import Menu from "./components/menu/Menu"
 import Navbar from "./components/navbar/Navbar"
-import { navbar_data, hero_data } from "./assets/Data"
+import { navbar_data, hero_data, about_data } from "./assets/Data"
 import { BrowserRouter } from "react-router-dom"
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Navbar navbar_data={navbar_data} />
       <Hero hero_data={hero_data} />
-      <About />
+      <About about_data={about_data} />
       <Menu />
       <Contact />
       <Footer />

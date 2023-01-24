@@ -1,4 +1,5 @@
 import heroImg from "../assets/kopi1.jpg"
+import aboutImg from "../assets/kopi3.jpg"
 
 const navbar_data = {
   logo_first: `kenangan`,
@@ -18,4 +19,12 @@ const hero_data = {
   img: heroImg,
   btn: "Beli Sekarang",
 }
-export { navbar_data, hero_data }
+const about_data = {
+  img: aboutImg,
+  about_why: "Kenapa memilih kopi kami?",
+  about_us:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam maxime libero explicabo velit sapiente.",
+  about_us2:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique omnis dolore quod accusamus maxime.",
+}
+export { navbar_data, hero_data, about_data }

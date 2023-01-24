@@ -1,0 +1,37 @@
+.about {
+  padding: 3rem 0;
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about span {
+  color: var(--color-primary);
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+.about-right p {
+  color: gray;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+@media screen and (max-width:768px) {
+  .about-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
