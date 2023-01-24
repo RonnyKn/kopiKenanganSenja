@@ -1,5 +1,6 @@
 import heroImg from "../assets/kopi1.jpg"
 import aboutImg from "../assets/kopi3.jpg"
+import espresoImg from "../assets/kopi2.jpg"
 
 const navbar_data = {
   logo_first: `kenangan`,
@@ -27,4 +28,16 @@ const about_data = {
   about_us2:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique omnis dolore quod accusamus maxime.",
 }
-export { navbar_data, hero_data, about_data }
+const menu_data = {
+  subtitle:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque mollitia tenetur impedit nemo, nisi sed!",
+  menus: [
+    { img: espresoImg, name: "espreso", price: "15k" },
+    { img: espresoImg, name: "espreso", price: "15k" },
+    { img: espresoImg, name: "espreso", price: "15k" },
+    { img: espresoImg, name: "espreso", price: "15k" },
+    { img: espresoImg, name: "espreso", price: "15k" },
+    { img: espresoImg, name: "espreso", price: "15k" },
+  ],
+}
+export { navbar_data, hero_data, about_data, menu_data }

@@ -1,0 +1,50 @@
+.menu {
+  padding: 3rem 0;
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.menu-title p {
+  color: gray;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-content: center;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-content img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+.menu-content p {
+  color: gray;
+}
+
+@media screen and (max-width:768px) {
+  .menu-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width:550px) {
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
