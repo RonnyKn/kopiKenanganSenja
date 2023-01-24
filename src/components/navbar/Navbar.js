@@ -11,11 +11,11 @@ import { useState } from "react"
 
 const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
   const [navShow, setNavShow] = useState(false)
-
+  const [isActive, setIsActive] = useState("#home")
   const scrollTop = () => {
     window.scroll(0, 0)
   }
-  console.log(navShow)
+
   return (
     <nav className="navbar">
       <div className="container navbar-container">
@@ -30,7 +30,14 @@ const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
         <div className="navbar-nav">
           <ul className={navShow ? "show" : "hide"}>
             {navigation?.map((val, idx) => (
-              <li key={idx} onClick={() => setNavShow(false)}>
+              <li
+                key={idx}
+                onClick={() => {
+                  setNavShow(false)
+                  setIsActive(`${val?.path}`)
+                }}
+                className={val?.path === isActive ? "navbar_active" : null}
+              >
                 <a href={val?.path}>{val?.nav}</a>
               </li>
             ))}
