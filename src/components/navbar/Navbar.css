@@ -55,7 +55,9 @@
 }
 
 .navbar_active a {
+  transition: all 400ms;
   color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
 }
 
 @media screen and (max-width:990px) {
