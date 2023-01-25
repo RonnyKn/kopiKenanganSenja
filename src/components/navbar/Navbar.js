@@ -44,8 +44,14 @@ const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
           </ul>
         </div>
         <div className="navbar-icons">
-          <AiOutlineShoppingCart size="1.5em" />
-          <AiOutlineSearch size="1.5em" />
+          <AiOutlineShoppingCart
+            size="1.5em"
+            onClick={() => window.alert("!FITUR DALAM PROSES PENGERJAAN!")}
+          />
+          <AiOutlineSearch
+            size="1.5em"
+            onClick={() => window.alert("!FITUR DALAM PROSES PENGERJAAN!")}
+          />
           <div className="navbar-hamburger">
             {navShow ? (
               <AiOutlineClose size="1.5em" onClick={() => setNavShow(false)} />
