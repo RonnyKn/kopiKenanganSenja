@@ -45,7 +45,6 @@ const navbar_data = {
 const hero_data = {
   title_first: "Mari Nikmati Secangkir",
   title_last: "Kopi",
-  subtitle: "Kopi dari Jogja untuk Dunia",
   img: heroImg,
   btn: "Beli Sekarang",
 }
