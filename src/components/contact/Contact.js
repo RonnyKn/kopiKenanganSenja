@@ -1,10 +1,36 @@
 import "./Contact.css"
-import React from "react"
+import React, { useRef } from "react"
 import { IoPersonOutline } from "react-icons/io5"
 import { MdAlternateEmail, MdOutlineMail } from "react-icons/md"
 import { FiSend } from "react-icons/fi"
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    window.alert(
+      "Thankyou, your message has been sent successfully. \nHave a great day ❤."
+    )
+
+    emailjs
+      .sendForm(
+        "service_2y24t5g",
+        "template_2gpy8ly",
+        form.current,
+        "8sH3i4bVXXbpdpkfh"
+      )
+      .then(
+        (result) => {
+          e.target.reset()
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+  }
+
   return (
     <section className="contact" id="contact">
       <div className="contact-title container">
@@ -32,26 +58,37 @@ const Contact = () => {
           ></iframe>
         </div>
         <div className="contact-right">
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <div className="input-group">
               <IoPersonOutline />
-              <input type="text" placeholder="nama.." required />
+              <input
+                type="text"
+                name="user_name"
+                id="user_name"
+                placeholder="nama.."
+                required
+              />
             </div>
             <div className="input-group">
               <MdAlternateEmail />
-              <input type="email" placeholder="email.." required />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="email.."
+                required
+              />
             </div>
             <div className="input-group">
               <MdOutlineMail />
               <textarea
-                name=""
-                id=""
+                name="message"
+                id="message"
                 cols="30"
                 placeholder="masukan pesan.."
                 required
               ></textarea>
             </div>
-            <button>
+            <button type="submit">
               Kirim <FiSend />
             </button>
           </form>
