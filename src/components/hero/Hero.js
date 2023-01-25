@@ -5,7 +5,7 @@ const Hero = ({
   hero_data: { title_first, title_last, subtitle, img, btn },
 }) => {
   return (
-    <header className="hero">
+    <header className="hero" id="home">
       <div className="container hero-container">
         <div className="hero-left"></div>
         <div className="hero-right">

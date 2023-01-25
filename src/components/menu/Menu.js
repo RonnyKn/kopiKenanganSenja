@@ -3,7 +3,7 @@ import React from "react"
 
 const Menu = ({ menu_data: { subtitle, menus } }) => {
   return (
-    <section className="menu">
+    <section className="menu" id="menu">
       <div className="menu-title container">
         <h1>
           <span>Menu </span>Kami

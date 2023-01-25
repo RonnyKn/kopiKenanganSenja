@@ -3,7 +3,7 @@ import React from "react"
 
 const About = ({ about_data: { img, about_why, about_us, about_us2 } }) => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <h1>
         <span>Tentang </span>Kami
       </h1>
