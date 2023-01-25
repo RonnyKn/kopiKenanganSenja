@@ -46,9 +46,7 @@ const Contact = () => {
             title="map"
             className="map"
             style={{ objectFit: "cover", width: "100%" }}
-            // width="600"
             height="400"
-            // style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -81,7 +79,7 @@ const Contact = () => {
                 name="message"
                 id="message"
                 cols="30"
-                placeholder="masukan pesan.."
+                placeholder="tulis pesan kamu.."
                 required
               ></textarea>
             </div>

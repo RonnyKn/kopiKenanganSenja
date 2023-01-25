@@ -17,6 +17,7 @@ import { FiTwitter } from "react-icons/fi"
 const menu_data = {
   subtitle: "Buat senja kamu lebih menarik dengan pilihan menu kopi kami",
   menus: [
+    { img: mocacinoImg, name: "Mocacino", price: "18" },
     { img: espressoImg, name: "Espreso", price: "15" },
     { img: americanoHotImg, name: "Americano", price: "18" },
     { img: velvetImg, name: "Red Velvet", price: "18" },
@@ -28,7 +29,6 @@ const menu_data = {
     { img: brewImg, name: "Cold Brew", price: "18" },
     { img: machiatoImg, name: "Machiatto", price: "18" },
     { img: aboutImg, name: "Piccolo", price: "18" },
-    { img: mocacinoImg, name: "Mocacino", price: "18" },
   ],
 }
 
@@ -53,7 +53,7 @@ const about_data = {
   img: aboutImg,
   about_why: "Kenapa memilih kopi kami?",
   about_us:
-    "Bukan hanya memiliki rasa yang khas dan harga yang terjangkau, kopi ini juga memiliki nama yang catchy, dan sederet menu yang akan memanjakan lidah kamu para pecinta kopi",
+    "Bukan hanya memiliki rasa yang khas dan harga yang terjangkau, kopi kami juga memiliki nama yang catchy, dan sederet menu yang akan memanjakan lidah kamu para pecinta kopi",
   about_us2:
     "Kata kenangan mengandung makna yang mendalam sedangkan senja adalah waktu yang pas untuk menikmati kopi yang satu ini.",
 }

@@ -13,7 +13,7 @@ const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
   const [navShow, setNavShow] = useState(false)
   const [isActive, setIsActive] = useState("#home")
   const scrollTop = () => {
-    window.scroll(0, -100)
+    window.scroll(0, 0)
   }
 
   return (
@@ -44,14 +44,16 @@ const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
           </ul>
         </div>
         <div className="navbar-icons">
-          <AiOutlineSearch
-            size="1.5em"
-            onClick={() => window.alert("!FITUR DALAM PROSES PENGERJAAN!")}
-          />
-          <AiOutlineShoppingCart
-            size="1.5em"
-            onClick={() => window.alert("!FITUR DALAM PROSES PENGERJAAN!")}
-          />
+          <div className="navbar-newfeatured">
+            <AiOutlineSearch
+              size="1.5em"
+              onClick={() => window.alert("!FITUR DALAM PROSES PENGERJAAN!")}
+            />
+            <AiOutlineShoppingCart
+              size="1.5em"
+              onClick={() => window.alert("!FITUR DALAM PROSES PENGERJAAN!")}
+            />
+          </div>
           <div className="navbar-hamburger">
             {navShow ? (
               <AiOutlineClose size="1.5em" onClick={() => setNavShow(false)} />
