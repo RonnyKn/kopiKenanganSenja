@@ -44,11 +44,11 @@ const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
           </ul>
         </div>
         <div className="navbar-icons">
-          <AiOutlineShoppingCart
+          <AiOutlineSearch
             size="1.5em"
             onClick={() => window.alert("!FITUR DALAM PROSES PENGERJAAN!")}
           />
-          <AiOutlineSearch
+          <AiOutlineShoppingCart
             size="1.5em"
             onClick={() => window.alert("!FITUR DALAM PROSES PENGERJAAN!")}
           />
