@@ -13,7 +13,7 @@ const Navbar = ({ navbar_data: { logo_first, logo_last, navigation } }) => {
   const [navShow, setNavShow] = useState(false)
   const [isActive, setIsActive] = useState("#home")
   const scrollTop = () => {
-    window.scroll(0, 0)
+    window.scroll(0, -100)
   }
 
   return (
