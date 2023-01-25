@@ -66,7 +66,6 @@ const footer_data = {
   ],
   links: ["Home", "Tentang Kami", "Menu", "Kontak"],
   copyrights: {
-    designer: "Sandhika Galih",
     creator: "Ronny Kurniawan",
   },
 }

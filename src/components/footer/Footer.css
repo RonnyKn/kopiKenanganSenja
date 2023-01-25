@@ -34,9 +34,11 @@
   font-weight: bold;
 }
 
-.copyright span {
-  color: var(--color-bg);
+.copyright {
+  display: flex;
+  flex-direction: column;
 }
+
 
 @media screen and (max-width:550px) {
   .footer-links {

@@ -13,7 +13,7 @@ const Menu = ({ menu_data: { subtitle, menus } }) => {
       <div className="container menu-container">
         {menus?.map((val, idx) => (
           <div className="menu-content" key={idx}>
-            <img src={val?.img} alt={`${val?.name}.png`} />
+            <img src={val?.img} alt={`${val?.name}.png`} loading="lazy" />
             <h3>~{val?.name}~</h3>
             <p>IDR {val?.price}K</p>
           </div>

@@ -4,7 +4,7 @@ const Footer = ({
   footer_data: {
     socials,
     links,
-    copyrights: { designer, creator },
+    copyrights: { creator },
   },
 }) => {
   return (
@@ -23,12 +23,7 @@ const Footer = ({
           ))}
         </ul>
         <div className="copyright">
-          <h5>
-            Created By <span>{creator}</span>
-          </h5>
-          <h5>
-            Designed By <span>{designer}</span>
-          </h5>
+          <h5>{creator}</h5>
           <h5>2023</h5>
         </div>
       </div>
