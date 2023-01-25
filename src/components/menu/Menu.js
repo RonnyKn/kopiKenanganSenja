@@ -15,7 +15,7 @@ const Menu = ({ menu_data: { subtitle, menus } }) => {
           <div className="menu-content" key={idx}>
             <img src={val?.img} alt={`${val?.name}.png`} />
             <h3>~{val?.name}~</h3>
-            <p>IDR {val?.price}</p>
+            <p>IDR {val?.price}K</p>
           </div>
         ))}
       </div>
