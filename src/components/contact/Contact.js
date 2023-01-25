@@ -7,7 +7,7 @@ import { FiSend } from "react-icons/fi"
 const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <div className="contact-title">
+      <div className="contact-title container">
         <h1>
           <span>Kontak </span>Kami
         </h1>
@@ -34,11 +34,11 @@ const Contact = () => {
         <div className="contact-right">
           <form action="">
             <div className="input-group">
-              <IoPersonOutline />{" "}
+              <IoPersonOutline />
               <input type="text" placeholder="nama.." required />
             </div>
             <div className="input-group">
-              <MdAlternateEmail />{" "}
+              <MdAlternateEmail />
               <input type="email" placeholder="email.." required />
             </div>
             <div className="input-group">
@@ -52,7 +52,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <button>
-              Kirim pesan <FiSend />
+              Kirim <FiSend />
             </button>
           </form>
         </div>
