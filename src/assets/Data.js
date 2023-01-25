@@ -9,25 +9,26 @@ import dripImg from "../assets/drip.jpg"
 import brewImg from "../assets/brew.jpg"
 import machiatoImg from "../assets/caramel machiatto.jpg"
 import latteImg from "../assets/latte.jpg"
+import velvetImg from "../assets/velvet.jpg"
+import mocacinoImg from "../assets/mocacino.jpg"
 import { BsInstagram, BsFacebook } from "react-icons/bs"
 import { FiTwitter } from "react-icons/fi"
 
 const menu_data = {
-  subtitle:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque mollitia tenetur impedit nemo, nisi sed!",
+  subtitle: "Buat senja kamu lebih menarik dengan pilihan menu kopi kami",
   menus: [
     { img: espressoImg, name: "Espreso", price: "15" },
-    { img: americanoHotImg, name: "Americano Hot", price: "18" },
+    { img: americanoHotImg, name: "Americano", price: "18" },
+    { img: velvetImg, name: "Red Velvet", price: "18" },
     { img: americanoIceImg, name: "Americano Ice", price: "18" },
     { img: capucinoImg, name: "Cappucino", price: "18" },
     { img: latteImg, name: "Latte", price: "18" },
     { img: espresoImg, name: "Carramell Latte", price: "18" },
     { img: dripImg, name: "Drip Coffee", price: "18" },
     { img: brewImg, name: "Cold Brew", price: "18" },
-    { img: machiatoImg, name: "Carramell Machiatto", price: "18" },
+    { img: machiatoImg, name: "Machiatto", price: "18" },
     { img: aboutImg, name: "Piccolo", price: "18" },
-    { img: machiatoImg, name: "Carramell Machiatto", price: "18" },
-    { img: machiatoImg, name: "Carramell Machiatto", price: "18" },
+    { img: mocacinoImg, name: "Mocacino", price: "18" },
   ],
 }
 
@@ -52,9 +53,9 @@ const about_data = {
   img: aboutImg,
   about_why: "Kenapa memilih kopi kami?",
   about_us:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam maxime libero explicabo velit sapiente.",
+    "Bukan hanya memiliki rasa yang khas dan harga yang terjangkau, kopi ini juga memiliki nama yang catchy, dan sederet menu yang akan memanjakan lidah kamu para pecinta kopi",
   about_us2:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam similique omnis dolore quod accusamus maxime.",
+    "Kata kenangan mengandung makna yang mendalam sedangkan senja adalah waktu yang pas untuk menikmati kopi yang satu ini.",
 }
 
 const footer_data = {

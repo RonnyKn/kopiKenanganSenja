@@ -37,10 +37,7 @@ const Contact = () => {
         <h1>
           <span>Kontak </span>Kami
         </h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          sed!
-        </p>
+        <p>Buruan pesan kopi mu sekarang!</p>
       </div>
       <div className="container contact-container">
         <div className="contact-left">
