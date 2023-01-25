@@ -13,7 +13,7 @@ const Hero = ({
             {title_first} <span>{title_last}</span>
           </h1>
           <p>{subtitle}</p>
-          <button>{btn}</button>
+          <a href="#contact">{btn}</a>
         </div>
       </div>
       <div className="hero-img">

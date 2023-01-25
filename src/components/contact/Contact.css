@@ -38,6 +38,7 @@ textarea {
   background: var(--color-bg);
   width: 100%;
   color: var(--color-white);
+  padding: .5rem;
 }
 
 .input-group {
