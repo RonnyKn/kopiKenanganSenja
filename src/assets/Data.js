@@ -1,6 +1,8 @@
 import heroImg from "../assets/kopi1.jpg"
 import aboutImg from "../assets/kopi3.jpg"
 import espresoImg from "../assets/kopi2.jpg"
+import { BsInstagram, BsFacebook } from "react-icons/bs"
+import { FiTwitter } from "react-icons/fi"
 
 const navbar_data = {
   logo_first: `kenangan`,
@@ -40,4 +42,16 @@ const menu_data = {
     { img: espresoImg, name: "espreso", price: "15k" },
   ],
 }
-export { navbar_data, hero_data, about_data, menu_data }
+const footer_data = {
+  socials: [
+    { icon: <BsInstagram />, href: "https://www.instagram.com/" },
+    { icon: <BsFacebook />, href: "https://www.facebook.com/" },
+    { icon: <FiTwitter />, href: "https://www.twitter.com/" },
+  ],
+  links: ["Home", "Tentang Kami", "Menu", "Kontak"],
+  copyrights: {
+    designer: "Sandhika Galih",
+    creator: "Ronny Kurniawan",
+  },
+}
+export { navbar_data, hero_data, about_data, menu_data, footer_data }
