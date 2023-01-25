@@ -29,9 +29,14 @@
   gap: 1rem;
 }
 
-.footer-links li {
+.footer-links a {
+  color: var(--color-white);
   cursor: pointer;
   font-weight: bold;
+}
+
+.footer-links a:hover {
+  border-bottom: 2px solid var(--color-white);
 }
 
 .copyright {

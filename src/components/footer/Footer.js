@@ -19,7 +19,9 @@ const Footer = ({
         </div>
         <ul className="footer-links">
           {links?.map((val, idx) => (
-            <li key={idx}>{val}</li>
+            <li key={idx}>
+              <a href={val?.path}>{val?.nav}</a>
+            </li>
           ))}
         </ul>
         <div className="copyright">

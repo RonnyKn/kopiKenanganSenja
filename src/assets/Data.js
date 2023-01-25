@@ -64,7 +64,12 @@ const footer_data = {
     { icon: <BsFacebook />, href: "https://www.facebook.com/" },
     { icon: <FiTwitter />, href: "https://www.twitter.com/" },
   ],
-  links: ["Home", "Tentang Kami", "Menu", "Kontak"],
+  links: [
+    { nav: "Home", path: "#home" },
+    { nav: "Tentang Kami", path: "#about" },
+    { nav: "Menu", path: "#menu" },
+    { nav: "Kontak", path: "#contact" },
+  ],
   copyrights: {
     creator: "Ronny Kurniawan",
   },
